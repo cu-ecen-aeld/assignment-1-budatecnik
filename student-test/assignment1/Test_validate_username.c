@@ -1,10 +1,11 @@
-# Sobreescribe el contenido para estar 100% seguros de que no hay líneas extra al final
-cat <<EOF > student-test/assignment1/Test_validate_username.c
+
 #include "unity.h"
 #include <stdbool.h>
 #include <stdlib.h>
 #include "../../examples/autotest-validate/autotest-validate.h"
 #include "../../assignment-autotest/test/assignment1/username-from-conf-file.h"
+
+
 
 void test_validate_my_username()
 {
@@ -16,4 +17,3 @@ void test_validate_my_username()
 
     free(actual_username);
 }
-EOF
